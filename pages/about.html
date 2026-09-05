@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Tathya</title>
+<meta name="description" content="Tathya rates news and claims for accuracy and shows evidence both ways — what supports it, and what refutes it — rather than a single verdict." />
+<link rel="icon" href="../assets/images/tathya-logo.png" />
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+<script>
+  (function(){
+    var t = localStorage.getItem('tathya-theme');
+    if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-left">
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a href="../index.html" class="brand">
+        <img src="../assets/images/tathya-logo.png" alt="Tathya logo" />
+        <span>Tathya</span>
+      </a>
+    </div>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="how-it-works.html">How it works</a>
+    </nav>
+
+    <div class="navbar-right">
+      <button class="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="login.html" class="auth-link">Signup / Login</a>
+    </div>
+  </div>
+</header>
+
+<div class="sidebar-overlay"></div>
+<aside class="mobile-sidebar" id="mobile-sidebar" aria-hidden="true">
+  <div class="sidebar-header">
+    <a href="../index.html" class="brand">
+      <img src="../assets/images/tathya-logo.png" alt="Tathya logo" />
+      <span>Tathya</span>
+    </a>
+    <button class="sidebar-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="sidebar-links" aria-label="Mobile">
+    <a href="../index.html">Home</a>
+    <a href="about.html" aria-current="page">About</a>
+    <a href="how-it-works.html">How it works</a>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="login.html" class="btn btn-primary btn-block">Signup / Login</a>
+  </div>
+</aside>
+
+<main id="main">
+  <div class="container page-header">
+    <h1>About Tathya</h1>
+    <p>We help people verify information before they believe or share it.</p>
+  </div>
+
+  <div class="container">
+    <div class="about-grid">
+      <div class="card about-card">
+        <h2>Our mission</h2>
+        <p>Tathya rates news and claims for accuracy and shows evidence both ways — what supports it, and what refutes it — rather than a single verdict.</p>
+      </div>
+      <div class="card about-card">
+        <div class="dev-card-head">
+          <div class="dev-avatar">MM</div>
+          <div>
+            <h2>Mannan Mishra</h2>
+            <div class="dev-role">Founder and developer</div>
+          </div>
+        </div>
+        <p>Built Tathya as a student project focused on rigorous, evidence-based fact-checking.</p>
+        <div class="dev-links">
+          <a href="https://github.com/mannan23-we" target="_blank" rel="noopener">github.com/mannan23-we</a>
+          <a href="https://linkedin.com/in/mannan-mishra-4325b037b" target="_blank" rel="noopener">linkedin.com/in/mannan-mishra-4325b037b</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card contact-card section-tight" id="contact" style="padding-block:30px; margin-bottom:40px;">
+      <h2>Get in touch</h2>
+      <p>Questions, feedback, or a correction to report — send a message.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="name@company.com" autocomplete="email" />
+            <span class="field-error"></span>
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:22px;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+          <span class="field-error"></span>
+        </div>
+        <button type="submit" class="btn btn-invert">Send message</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand">
+          <img src="../assets/images/tathya-logo.png" alt="Tathya logo" />
+          <span>Tathya</span>
+        </a>
+        <p>Verify before you believe or share. Evidence-based claim checking, built for a global audience.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="login.html">Signup / Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Tathya. All rights reserved.</span>
+      <span>See · Verify · Share wisely</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/theme.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

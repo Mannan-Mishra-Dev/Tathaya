@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tathya — Verify before you believe or share</title>
+<meta name="description" content="Drop a link, a claim, or a screenshot. Tathya checks it against sources on both sides and shows you the evidence — not just a verdict." />
+<link rel="icon" href="assets/images/tathya-logo.png" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script>
+  (function(){
+    var t = localStorage.getItem('tathya-theme');
+    if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-left">
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a href="index.html" class="brand">
+        <img src="assets/images/tathya-logo.png" alt="Tathya logo" />
+        <span>Tathya</span>
+      </a>
+    </div>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/how-it-works.html">How it works</a>
+    </nav>
+
+    <div class="navbar-right">
+      <button class="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="pages/login.html" class="auth-link">Signup / Login</a>
+    </div>
+  </div>
+</header>
+
+<div class="sidebar-overlay"></div>
+<aside class="mobile-sidebar" id="mobile-sidebar" aria-hidden="true">
+  <div class="sidebar-header">
+    <a href="index.html" class="brand">
+      <img src="assets/images/tathya-logo.png" alt="Tathya logo" />
+      <span>Tathya</span>
+    </a>
+    <button class="sidebar-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="sidebar-links" aria-label="Mobile">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/how-it-works.html">How it works</a>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="pages/login.html" class="btn btn-primary btn-block">Signup / Login</a>
+  </div>
+</aside>
+
+<main id="main">
+  <!-- ============ HERO ============ -->
+  <section class="hero container">
+    <div class="hero-badge-row reveal">
+      <span class="badge">Live evidence-based verification</span>
+    </div>
+    <h1 class="reveal">Verify before you <span class="accent">believe</span> or share</h1>
+    <p class="hero-sub reveal">Drop a link, a claim, or a screenshot. Tathya checks it against sources on both sides and shows you the evidence — not just a verdict.</p>
+
+    <div class="hero-cta-row reveal">
+      <a href="pages/how-it-works.html" class="btn btn-primary">See how it works</a>
+      <a href="pages/login.html" class="btn btn-text">Get started</a>
+    </div>
+
+    <div class="hero-stats reveal">
+      <span><strong>12,400+</strong> claims checked</span>
+      <span><strong>2-sided</strong> evidence, every time</span>
+      <span>Free to use</span>
+    </div>
+
+    <div class="chat-mock reveal" role="img" aria-label="Example verification chat between a user and Tathya">
+      <div class="chat-mock-header">
+        <span class="chat-dots"><span></span><span></span><span></span></span>
+        tathya · verification chat
+      </div>
+      <div class="chat-mock-body">
+        <div class="chat-msg">
+          <div class="chat-avatar">U</div>
+          <div>
+            <div class="chat-msg-name">You</div>
+            <div class="chat-msg-text">"A viral post claims a new study proves coffee reverses aging by 10 years."</div>
+          </div>
+        </div>
+        <div class="chat-msg">
+          <div class="chat-avatar tathya">T</div>
+          <div>
+            <div class="chat-msg-name">Tathya</div>
+            <span class="verdict-pill misleading"><span class="verdict-dot"></span>Misleading — 34% genuine</span>
+            <div class="chat-msg-text">The underlying study exists but measured a minor cellular marker in mice, not human aging reversal. The "10 years" figure doesn't appear in the source paper.</div>
+            <div class="chat-evidence-row">
+              <span class="evidence-chip">Original study (PubMed)</span>
+              <span class="evidence-chip">Viral video, 2.1M views</span>
+              <span class="evidence-chip">3 outlets corrected since</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Process</span>
+        <h2>How it works</h2>
+        <p>Every claim goes through the same five-step check, so the verdict is repeatable, not a guess.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-card">
+          <span class="process-num">01</span>
+          <h3>Submit</h3>
+          <p>Paste a link, a claim, or upload a screenshot.</p>
+        </div>
+        <div class="process-card">
+          <span class="process-num">02</span>
+          <h3>Extract claims</h3>
+          <p>Tathya isolates the specific factual assertions.</p>
+        </div>
+        <div class="process-card">
+          <span class="process-num">03</span>
+          <h3>Analyze sources</h3>
+          <p>Cross-checks against credible, ranked sources.</p>
+        </div>
+        <div class="process-card">
+          <span class="process-num">04</span>
+          <h3>Compare evidence</h3>
+          <p>Weighs evidence for and against side by side.</p>
+        </div>
+        <div class="process-card">
+          <span class="process-num">05</span>
+          <h3>Generate verdict</h3>
+          <p>Returns a rated verdict with full evidence trail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUTH SPECTRUM ============ -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Truth spectrum</span>
+        <h2>Every verdict, clearly labeled</h2>
+        <p>No single "true or false" button. Claims land somewhere on a spectrum, with evidence for both sides.</p>
+      </div>
+      <div class="spectrum-grid">
+        <div class="spectrum-card true">
+          <h3><span class="verdict-dot"></span>True</h3>
+          <p>Backed by credible, corroborating sources.</p>
+        </div>
+        <div class="spectrum-card false">
+          <h3><span class="verdict-dot"></span>False</h3>
+          <p>Contradicted by verifiable evidence.</p>
+        </div>
+        <div class="spectrum-card misleading">
+          <h3><span class="verdict-dot"></span>Misleading</h3>
+          <p>Technically accurate, but framed to deceive.</p>
+        </div>
+        <div class="spectrum-card unverified">
+          <h3><span class="verdict-dot"></span>Unverified</h3>
+          <p>Not enough credible evidence either way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Features</span>
+        <h2>Built for scrutiny, not speed alone</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">Ai</div>
+          <div>
+            <h3>AI-generated explanation</h3>
+            <p>Plain-language reasoning behind every verdict, not a black-box score.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">%</div>
+          <div>
+            <h3>Misinformation risk scoring</h3>
+            <p>A 0–100 genuineness rating so you can gauge severity at a glance.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">Sc</div>
+          <div>
+            <h3>Source credibility analysis</h3>
+            <p>Every cited source is ranked for track record and independence.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">Cs</div>
+          <div>
+            <h3>Cross-source verification</h3>
+            <p>No single source decides — claims are checked against multiple, independent ones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions, answered</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" data-open="true">
+          <button class="faq-question">
+            Is Tathya free to use?
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Yes. Tathya is free — our goal is wider adoption of evidence-based checking, not a paywall.</p></div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-question">
+            How is this different from a search engine?
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>A search engine returns links. Tathya cross-checks the claim against sources on both sides and returns a rated verdict with the evidence trail attached.</p></div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-question">
+            What kinds of content can I check?
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Links, written claims, or screenshots — drop any of them into the chat and Tathya extracts the claims to verify.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/images/tathya-logo.png" alt="Tathya logo" />
+          <span>Tathya</span>
+        </a>
+        <p>Verify before you believe or share. Evidence-based claim checking, built for a global audience.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/how-it-works.html">How it works</a></li>
+          <li><a href="pages/login.html">Signup / Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Tathya. All rights reserved.</span>
+      <span>See · Verify · Share wisely</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* ============================================================
+   TATHYA — Responsive rules
+   Breakpoints: 1080 (laptop) / 860 (tablet) / 600 (mobile) / 380 (small)
+   ============================================================ */
+
+/* ---------- Laptop / small desktop ---------- */
+@media (max-width: 1080px) {
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .spectrum-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 860px) {
+  .section {
+    padding-block: 72px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    margin-bottom: 8px;
+  }
+
+  .cta-band {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .cta-band .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+  .container {
+    padding-inline: 18px;
+  }
+
+  .section {
+    padding-block: 56px;
+  }
+
+  .section-tight {
+    padding-block: 44px;
+  }
+
+  .navbar-inner {
+    height: 60px;
+    padding-inline: 16px;
+  }
+
+  .brand span {
+    font-size: 1.05rem;
+  }
+
+  .hero {
+    padding-block: 48px 24px;
+    text-align: left;
+  }
+
+  .hero-badge-row {
+    justify-content: flex-start;
+  }
+
+  .hero h1 {
+    text-align: left;
+    margin-inline: 0;
+  }
+
+  .hero-sub {
+    text-align: left;
+    margin-inline: 0;
+  }
+
+  .hero-cta-row {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta-row .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .chat-mock {
+    margin-top: 36px;
+    border-radius: var(--radius-md);
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spectrum-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-item {
+    gap: 16px;
+  }
+
+  .auth-card {
+    padding: 28px 20px;
+  }
+
+  .about-card,
+  .contact-card {
+    padding: 22px;
+  }
+}
+
+/* ---------- Small mobile ---------- */
+@media (max-width: 380px) {
+  .spectrum-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .btn {
+    padding: 12px 18px;
+  }
+}
