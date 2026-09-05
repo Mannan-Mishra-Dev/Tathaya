@@ -1,77 +1,98 @@
-<<<<<<< HEAD
-# Tathya — Frontend
+🔎 Tathya — Fake News & Information Verification Platform
 
-Verify before you believe or share. A static, vanilla HTML/CSS/JS
-front end for the Tathya evidence-based claim verification product.
+Tathya is a web-based information verification platform designed to help users identify potentially misleading, manipulated, or false information circulating on the internet.
 
-## Structure
+The basic idea is simple: a user provides information they want to verify, and Tathya analyzes it and presents an understandable assessment instead of expecting the user to manually investigate multiple sources.
 
-```
-TATHYA/
-│
-├── index.html                 Homepage
-│
-├── pages/
-│   ├── about.html              Mission, developer info, contact form
-│   ├── how-it-works.html       5-step process, truth spectrum, FAQ
-│   └── login.html              Combined Log in / Sign up
-│
-├── css/
-│   ├── style.css                Design tokens, base styles, components
-│   └── responsive.css           Breakpoints (1080 / 860 / 600 / 380)
-│
-├── js/
-│   ├── theme.js                 Light/dark mode, persisted + system-aware
-│   ├── navbar.js                 Mobile sidebar, scroll state, focus trap
-│   ├── faq.js                    Accessible accordion
-│   ├── auth.js                   Login/Signup tab switching
-│   └── main.js                   Scroll reveal + contact form validation
-│
-├── assets/
-│   └── images/tathya-logo.png    Brand mark
-│
-└── README.md
-```
+🎯 Problem Statement
 
-## Design system
+Today, information spreads extremely quickly through platforms like Instagram, YouTube, WhatsApp, Facebook, and news websites. The problem is that users often cannot distinguish between:
 
-Theme variables live in `css/style.css` under `:root` (light) and
-`[data-theme="dark"]`. Every color, surface, border and verdict tint
-is a CSS custom property, so the whole site reflows between light
-and dark instantly with no per-component overrides.
+Genuine news
+Misleading headlines
+Edited or manipulated information
+Out-of-context claims
+Completely fabricated news
 
-Verdict colors follow the standard convention: green (true), red
-(false), amber (misleading), gray (unverified) — consistent across
-the truth-spectrum cards on the homepage and How it works page.
+Manually verifying every claim is time-consuming and requires checking multiple reliable sources.
 
-## Behavior notes
+Tathya aims to make this verification process faster and easier.
 
-- **Theme** persists to `localStorage` under `tathya-theme` and
-  otherwise follows the OS preference. Applied inline in `<head>`
-  before paint to avoid a flash of the wrong theme.
-- **Mobile navigation**: the hamburger sits on the left of the
-  navbar (next to the logo); it opens a left-sliding sidebar with
-  a background overlay, focus trap, and Escape-to-close.
-- **Auth**: a single "Signup / Login" entry point in the navbar
-  leads to one page with a Log in / Sign up tab switch — no separate
-  buttons. Forms are client-validated only; there is no backend
-  wired up yet (submitting shows a local "not wired up" message).
-- **Contact form** (About page) validates name, email, and a
-  10-character-minimum message before showing a success state.
-- All interactive elements are keyboard reachable with visible
-  focus rings, and `prefers-reduced-motion` disables transitions.
+⚙️ How Tathya Works
 
-## Running locally
+The workflow can be presented like this:
 
-This is a static site — no build step. Serve the folder with any
-static server, e.g.:
+User Input → Content Extraction → Claim Analysis → Source Verification → Result → Explanation
 
-```
-npx serve .
-```
+For example, a user can provide a news article, social-media video link, or text-based claim.
 
-or open `index.html` directly in a browser.
-=======
-# Tathaya
-Tathya is a web-based misinformation verification platform that helps users analyze news, social media content, and textual claims to identify potentially false or misleading information. It aims to provide clear verdicts, supporting evidence, and easy-to-understand explanations.
->>>>>>> 5df4d13e47297c30af436fa16b1769198797f6bf
+Tathya then processes the available information and evaluates the claim using relevant verification techniques and sources.
+
+The result could be presented with categories such as:
+
+✅ Likely True
+⚠️ Misleading / Partially True
+❌ Likely False
+🔍 Needs Verification
+
+The important part is that Tathya shouldn't simply say "fake" or "real." It should explain why the claim received that assessment and provide supporting evidence wherever possible.
+
+🧠 Key Feature
+
+The main feature of Tathya is claim-based verification.
+
+Instead of treating an entire article or video as simply true or false, the system attempts to identify the actual claim being made and evaluate that claim.
+
+For example:
+
+Claim: "XYZ government has launched a new scheme giving ₹50,000 to every student."
+
+Tathya could identify the claim, search/compare it against reliable sources, and report something like:
+
+Verdict: Misleading
+The scheme exists, but the ₹50,000 benefit is not available to every student.
+
+That makes the system much more useful than a simple binary fake-news detector.
+
+💻 Technology
+
+For the initial version, your project can be structured using:
+
+Frontend
+
+HTML
+CSS
+JavaScript
+
+Backend / Processing
+
+Python
+Flask or Django
+
+Data & AI
+
+NLP for extracting and understanding claims
+Machine-learning/AI models for classification
+External fact-checking and reliable information sources
+
+Database
+
+MySQL / MongoDB, depending on your implementation
+🚀 Future Scope
+
+Tathya can eventually be expanded to support:
+
+AI-powered claim extraction
+YouTube/social-media content analysis
+Image and video misinformation detection
+Reverse image verification
+Source credibility scoring
+Multilingual Indian-language verification
+Browser extension for instant verification
+Fact-check history and user reports
+AI-generated explanation of the verdict
+🎤 Short Presentation Version
+
+If someone asks "What is your project?", say:
+
+"Tathya is a web-based information verification platform that aims to help users identify misleading and false information on the internet. Users can submit a news article, social-media link, or textual claim, and the system analyzes the claim, compares it with reliable information sources, and provides a verdict along with an explanation and supporting evidence. The main goal of Tathya is not just to label information as true or false, but to help users understand why a particular claim is considered reliable, misleading, or false."
