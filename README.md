@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tathya — Frontend
 
 Verify before you believe or share. A static, vanilla HTML/CSS/JS
@@ -70,3 +71,7 @@ npx serve .
 ```
 
 or open `index.html` directly in a browser.
+=======
+# Tathaya
+Tathya is a web-based misinformation verification platform that helps users analyze news, social media content, and textual claims to identify potentially false or misleading information. It aims to provide clear verdicts, supporting evidence, and easy-to-understand explanations.
+>>>>>>> 5df4d13e47297c30af436fa16b1769198797f6bf
